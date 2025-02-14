@@ -5,6 +5,7 @@ public class Circulo extends Figura {
     float radio;
 
     public Circulo(float radio) {
+        super((float) (Math.PI * Math.pow(radio, 2)));
         this.radio = radio;
     }
 

@@ -5,9 +5,10 @@ public class Triangulo extends Figura {
     float altura;
 
     public Triangulo(float altura, float base) {
-
+        super((base * altura)/2);
         this.altura = altura;
         this.base = base;
+
     }
 
     @Override

@@ -1,11 +1,14 @@
 package Main;
 
 public abstract class Figura {
-    float area;
     static float AreaFiguras;
 
-    public Figura() {
+    public Figura(float area) {
+        AreaFiguras += area;
+    }
 
+    public static float getArea() {
+        return AreaFiguras;
     }
 
     public abstract float calcularArea();
